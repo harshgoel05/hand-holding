@@ -1,0 +1,247 @@
+.navbar {
+	background-color: pink !important;
+	z-index: 999;
+}
+.navbar .navbar-brand {
+	color: rgb(255, 255, 255) !important;
+	text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+	color: rgb(255, 255, 255) !important;
+	text-transform: uppercase;
+}
+/* HomePage */
+body,
+html {
+	overflow-x: hidden;
+}
+
+.home {
+	background-image: url('../img/background1.png');
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	margin-top: -60px;
+}
+.hometext {
+	margin: 240px 80px 0px 50px;
+	color: white;
+}
+
+.home-img {
+	width: 90%;
+	margin-top: 30%;
+}
+
+.hhs-section {
+	margin: 130px 0px;
+}
+.hhs-section .heading-tag {
+	margin-bottom: 60px;
+}
+
+/* About us */
+.content-tag {
+	padding: 20px 23%;
+	font-size: 17px;
+	text-align: justify;
+}
+/* Our process */
+
+.img-tag img {
+	width: 60%;
+}
+/* Why collab */
+.hhs-card {
+	width: 260px;
+	height: 220px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	padding: 40px;
+}
+.hhs-card img {
+	width: 50%;
+}
+.hhs-card p {
+	margin-top: 10px;
+}
+.hhs-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#why-collab .col-md-4 {
+	text-align: center;
+	margin: 0px auto;
+}
+#why-collab .hhs-card {
+	text-align: center;
+	margin: 20px auto;
+}
+.hhs-card-tag {
+	margin: 0px 260px;
+}
+@media (max-width: 1300px) {
+	.hhs-card-tag {
+		margin: 0px 30px;
+	}
+}
+
+#services {
+	background: url(../img/bg-1.png);
+	background-position: center center;
+	background-size: 100% 100%;
+	/* background-size: cover; */
+	padding: 200px 0px 10px 20px;
+}
+.services-tag {
+	margin: 120px 250px;
+}
+.services-tag img {
+	width: 70%;
+	margin: 20px auto;
+}
+.btn-container {
+	margin: 20px auto;
+}
+.btn-services {
+	border-radius: 20px;
+	border: solid 1px #ffffff;
+	background-color: rgba(255, 255, 255, 0);
+	outline: none !important;
+	box-shadow: none !important;
+	color: #ffffff;
+	padding: 7px 40px;
+}
+.btn-services:hover {
+	border-radius: 20px;
+	border: solid 1px #ffffff;
+	background-color: rgba(255, 255, 255, 0);
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: #ffffff;
+	padding: 7px 40px;
+	color: black !important;
+}
+
+.contact-c i {
+	font-size: 50px;
+}
+.contact-c {
+	margin-bottom: 50px;
+}
+#contact-us {
+	margin: 120px 80px;
+}
+input,
+textarea {
+	background-color: #eeeeee !important;
+	border-radius: 0 !important;
+	outline: none !important;
+	box-shadow: none !important;
+	border: 1px solid transparent !important;
+	width: 70% !important;
+	margin: auto;
+	color: black !important;
+}
+input {
+	height: 45px !important;
+}
+input::placeholder,
+textarea::placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: black !important;
+}
+.btn-submit {
+	/* margin-left: -230px !important; */
+	border: none;
+	background-color: #eeeeee !important;
+	color: black;
+	outline: none !important;
+	box-shadow: none !important;
+	width: 200px;
+	margin-top: 20px;
+}
+
+footer {
+	background-color: #22395b;
+	height: 270px;
+	width: 100%;
+}
+.footer-img {
+	margin: 0 auto;
+	height: 230px;
+	margin-top: 20px;
+	margin-left: 140px;
+	text-align: center;
+}
+.links-cont {
+	margin-top: 70px;
+	margin-left: 20px;
+}
+.links-cont a {
+	color: white !important;
+	margin-left: 50px;
+	font-size: 18px;
+}
+.links-cont i {
+	color: #63ceff !important;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+	.hometext {
+		margin: 140px 80px 0px 30px;
+		color: white;
+	}
+	.home-img {
+		margin-top: 0;
+	}
+	.hhs-card-tag {
+		margin: 0px auto;
+	}
+	.content-tag {
+		padding: 20px 16%;
+	}
+	.img-tag img {
+		width: 90%;
+	}
+	.services-tag {
+		margin: 0px auto;
+	}
+	.services-tag {
+		width: 200px;
+	}
+	#contact-us {
+		margin: 0px auto;
+	}
+	footer {
+		margin-top: 60px;
+		height: 800px;
+	}
+	.footer-img {
+		margin-left: 100px;
+	}
+	.links-cont {
+		margin-top: 70px;
+		margin-left: 20px;
+	}
+	.links-cont a {
+		color: white !important;
+		margin: auto;
+		text-align: center;
+		font-size: 18px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.links-cont i {
+		color: white !important;
+		margin: auto;
+		text-align: center;
+		font-size: 30px;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
