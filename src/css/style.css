@@ -11,7 +11,7 @@
 	text-transform: uppercase;
 }
 .hhs-active {
-	background-color: tomato;
+	background-color: #22395b !important;
 }
 /* HomePage */
 body,
