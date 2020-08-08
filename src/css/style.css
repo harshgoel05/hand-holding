@@ -1,5 +1,5 @@
 .navbar {
-	background-color: pink !important;
+	background-color: transparent !important;
 	z-index: 999;
 }
 .navbar .navbar-brand {
@@ -9,6 +9,9 @@
 .navbar-nav .nav-link {
 	color: rgb(255, 255, 255) !important;
 	text-transform: uppercase;
+}
+.hhs-active {
+	background-color: tomato;
 }
 /* HomePage */
 body,
@@ -243,5 +246,52 @@ footer {
 		font-size: 30px;
 		display: block;
 		margin-bottom: 10px;
+	}
+}
+
+/* our Services */
+#our-services .content-tag {
+	text-align: center;
+}
+#our-services h2 {
+	color: #3c90e6;
+}
+#our-services-card .hhs-card {
+	width: 220px;
+	height: 200px;
+	margin: auto;
+}
+.single-service {
+	margin: 0px 220px;
+	height: 450px;
+}
+.single-service .content-col {
+	padding: 0px 80px;
+}
+.single-service .content-col h2 {
+	margin: 30px 0px;
+}
+.single-service .tech-stack {
+	padding: 10px 70px;
+}
+.single-service .tech {
+	padding: 6px 15px;
+	border-radius: 5px;
+	border: solid 1px #d4d4d4;
+	display: block;
+	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.single-service {
+		margin: auto;
+		height: 500px;
+	}
+	.single-service .col-md-4 {
+		margin: auto;
+		text-align: center;
+	}
+	.tech-stack {
+		display: none;
 	}
 }
