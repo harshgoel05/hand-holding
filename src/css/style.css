@@ -36,7 +36,10 @@ html {
 	width: 90%;
 	margin-top: 30%;
 }
-
+.hhs-section h2{
+	font-weight: bold;
+	color: #22395b;
+}
 .hhs-section {
 	margin: 130px 0px;
 }
@@ -88,6 +91,13 @@ html {
 	.hhs-card-tag {
 		margin: 0px 30px;
 	}
+}
+/*Changing the color of collaboration heading to white*/
+.collab{
+	color: white;
+}
+.services-tag p{
+	color: white;
 }
 
 #services {
