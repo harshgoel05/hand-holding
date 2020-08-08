@@ -10,6 +10,13 @@
 	color: rgb(255, 255, 255) !important;
 	text-transform: uppercase;
 }
+.nav-item {
+	padding: 0px 10px;
+	transition: 0.18s ease-in all;
+}
+.nav-item:hover {
+	box-shadow: 0px 1px 0px 0px beige;
+}
 .hhs-active {
 	background-color: #22395b !important;
 }
@@ -17,6 +24,7 @@
 body,
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .home {
@@ -36,7 +44,7 @@ html {
 	width: 90%;
 	margin-top: 30%;
 }
-.hhs-section h2{
+.hhs-section h2 {
 	font-weight: bold;
 	color: #22395b;
 }
@@ -93,10 +101,10 @@ html {
 	}
 }
 /*Changing the color of collaboration heading to white*/
-.collab{
+.collab {
 	color: white;
 }
-.services-tag p{
+.services-tag p {
 	color: white;
 }
 
@@ -126,19 +134,22 @@ html {
 	color: #ffffff;
 	padding: 7px 40px;
 }
-.btn-services:hover {
+.btn-services:hover,
+.btn-services:focus,
+.btn-services:active {
 	border-radius: 20px;
 	border: solid 1px #ffffff;
 	background-color: rgba(255, 255, 255, 0);
 	outline: none !important;
 	box-shadow: none !important;
-	background-color: #ffffff;
+	background-color: #ffffff !important;
 	padding: 7px 40px;
 	color: black !important;
 }
 
-.contact-c i {
-	font-size: 50px;
+.contact-c img {
+	width: 45px;
+	margin-bottom: 4px;
 }
 .contact-c {
 	margin-bottom: 50px;
@@ -176,6 +187,16 @@ textarea:-moz-placeholder {
 	width: 200px;
 	margin-top: 20px;
 }
+.btn-submit:hover,
+.btn-submit:active {
+	border: none;
+	background-color: #f1f1f1 !important;
+	color: black !important;
+	outline: none !important;
+	box-shadow: none !important;
+	width: 200px;
+	margin-top: 20px;
+}
 
 footer {
 	background-color: #22395b;
@@ -190,20 +211,40 @@ footer {
 	text-align: center;
 }
 .links-cont {
+	text-align: center;
+}
+.quick-links {
 	margin-top: 70px;
-	margin-left: 20px;
 }
 .links-cont a {
 	color: white !important;
-	margin-left: 50px;
+	margin: 30px;
 	font-size: 18px;
+	text-decoration: none !important;
+}
+.desktop-links {
+	margin-top: 40px !important;
 }
 .links-cont i {
-	color: #63ceff !important;
+	color: white !important;
 	font-size: 30px;
 	margin-left: 20px;
 }
 
+.desktop-links {
+	display: block;
+}
+.phone-links {
+	display: none;
+	text-align: center;
+	margin-top: 30px;
+}
+.phone-links a {
+	color: white !important;
+	margin: 20px;
+	font-size: 20px;
+	text-align: center;
+}
 @media (max-width: 768px) {
 	.hometext {
 		margin: 140px 80px 0px 30px;
@@ -232,7 +273,7 @@ footer {
 	}
 	footer {
 		margin-top: 60px;
-		height: 800px;
+		height: 600px;
 	}
 	.footer-img {
 		margin-left: 100px;
@@ -249,13 +290,11 @@ footer {
 		display: block;
 		margin-bottom: 10px;
 	}
-	.links-cont i {
-		color: white !important;
-		margin: auto;
-		text-align: center;
-		font-size: 30px;
+	.desktop-links {
+		display: none;
+	}
+	.phone-links {
 		display: block;
-		margin-bottom: 10px;
 	}
 }
 
@@ -269,7 +308,7 @@ footer {
 #our-services-card .hhs-card {
 	width: 220px;
 	height: 200px;
-	margin: auto;
+	margin: 20px auto;
 }
 .single-service {
 	margin: 0px 220px;
@@ -295,7 +334,7 @@ footer {
 @media (max-width: 768px) {
 	.single-service {
 		margin: auto;
-		height: 500px;
+		height: 640px;
 	}
 	.single-service .col-md-4 {
 		margin: auto;
@@ -303,5 +342,8 @@ footer {
 	}
 	.tech-stack {
 		display: none;
+	}
+	#services {
+		background: #22395b !important;
 	}
 }
