@@ -353,8 +353,9 @@ footer .col-md-4 {
 	margin: 20px auto;
 }
 .single-service {
-	margin: 0px 220px;
+	padding: 0px 220px;
 	height: 450px;
+	position: relative;
 }
 .single-service .content-col {
 	padding: 0px 80px;
@@ -382,7 +383,7 @@ footer .col-md-4 {
 
 @media (max-width: 768px) {
 	.single-service {
-		margin: auto;
+		padding: 0;
 		height: 640px;
 	}
 	.single-service .col-md-4 {
@@ -506,4 +507,18 @@ footer .col-md-4 {
 }
 a {
 	text-decoration: none !important;
+}
+
+.web-1,
+.app-1,
+.gd-1,
+.ui-1 {
+	position: absolute;
+	width: 200px;
+	opacity: 0.03;
+	top: 10%;
+	right: -30px;
+}
+
+@media (max-width: 768px) {
 }
