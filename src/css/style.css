@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Gilroy-ExtraLight;
+	src: url('../fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+	font-family: Gilroy-ExtraBold;
+	src: url('../fonts/Gilroy-ExtraBold.otf');
+}
+
 .navbar {
 	background-color: transparent !important;
 	z-index: 999;
@@ -14,8 +24,28 @@
 	padding: 0px 10px;
 	transition: 0.18s ease-in all;
 }
+.quick-links a {
+	transition: 0.18s ease-in all;
+	padding-bottom: 3px;
+}
+.quick-links a:hover {
+	box-shadow: 0px 1px 0px 0px #5889d3;
+	color: #5889d3 !important	;
+}
+.desktop-links i:hover {
+	color: #5889d3 !important	;
+}
+.desktop-links i {
+	transition: 0.18s ease-in all;
+}
 .nav-item:hover {
-	box-shadow: 0px 1px 0px 0px beige;
+	box-shadow: 0px 1px 0px 0px #5889d3;
+}
+.nav-item:hover .nav-link {
+	color: #5889d3 !important	;
+}
+.nav-item .nav-link {
+	transition: 0.18s ease-in all;
 }
 .hhs-active {
 	background-color: #22395b !important;
@@ -36,12 +66,15 @@ html {
 	margin-top: -60px;
 }
 .hometext {
-	margin: 240px 80px 0px 50px;
+	margin: 280px 80px 0px 50px;
 	color: white;
+}
+.hometext h1 {
+	font-family: Gilroy-ExtraBold;
 }
 
 .home-img {
-	width: 90%;
+	width: 100%;
 	margin-top: 30%;
 }
 .hhs-section h2 {
@@ -50,9 +83,13 @@ html {
 }
 .hhs-section {
 	margin: 110px 0px;
+	position: relative;
 }
 .hhs-section .heading-tag {
 	margin-bottom: 60px;
+}
+.hhs-section .heading-tag h2 {
+	font-family: Gilroy-ExtraBold;
 }
 
 /* About us */
@@ -65,6 +102,7 @@ html {
 
 .img-tag img {
 	width: 60%;
+	z-index: 89;
 }
 /* Why collab */
 .hhs-card {
@@ -79,7 +117,13 @@ html {
 	width: 50%;
 }
 .hhs-card p {
-	margin-top: 10px;
+	margin-top: 30px;
+	color: #707070;
+	text-decoration: none !important;
+}
+.hhs-card:hover p {
+	color: #707070;
+	text-decoration: none !important;
 }
 .hhs-card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -113,7 +157,7 @@ html {
 	background-position: center center;
 	background-size: 100% 100%;
 	/* background-size: cover; */
-	padding: 200px 0px 10px 20px;
+	padding: 150px 0px 40px 20px;
 }
 .services-tag {
 	margin: 120px 250px;
@@ -203,12 +247,13 @@ footer {
 	height: 270px;
 	width: 100%;
 }
+footer .col-md-4 {
+	text-align: center;
+}
 .footer-img {
 	margin: 0 auto;
-	height: 230px;
-	margin-top: 20px;
-	margin-left: 140px;
 	text-align: center;
+	height: 230px;
 }
 .links-cont {
 	text-align: center;
@@ -275,9 +320,6 @@ footer {
 		margin-top: 60px;
 		height: 600px;
 	}
-	.footer-img {
-		margin-left: 100px;
-	}
 	.links-cont {
 		margin-top: 70px;
 		margin-left: 20px;
@@ -319,6 +361,11 @@ footer {
 }
 .single-service .content-col h2 {
 	margin: 30px 0px;
+	font-family: Gilroy-ExtraBold;
+	color: #3c90e6;
+}
+.single-service .content-col p {
+	color: #707070;
 }
 .single-service .tech-stack {
 	padding: 10px 70px;
@@ -328,7 +375,9 @@ footer {
 	border-radius: 5px;
 	border: solid 1px #d4d4d4;
 	display: block;
-	width: 80%;
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
@@ -346,4 +395,115 @@ footer {
 	#services {
 		background: #22395b !important;
 	}
+}
+
+/* Dots */
+.aboutdot {
+	width: 45px;
+	position: absolute;
+	right: 190px;
+	top: 30px;
+}
+.processdot1 {
+	width: 45px;
+	position: absolute;
+	left: 230px;
+	bottom: 230px;
+}
+.processdot2 {
+	width: 150px;
+	position: absolute;
+	right: 220px;
+	bottom: 20px;
+	z-index: -999;
+}
+.hss-card {
+	z-index: 140;
+}
+.collabdot1 {
+	width: 80px;
+	position: absolute;
+	left: 10%;
+	bottom: 40px;
+	z-index: -99;
+	opacity: 0.4;
+}
+.collabdot2 {
+	width: 80px;
+	position: absolute;
+	right: 10%;
+	top: 0px;
+	z-index: -99;
+	opacity: 0.4;
+}
+.collabdot3 {
+	width: 80px;
+	position: absolute;
+	right: 10%;
+	bottom: -40px;
+	z-index: -99;
+	opacity: 0.4;
+}
+.sdot0 {
+	width: 280px;
+	position: absolute;
+	left: -40px;
+	bottom: 30px;
+	z-index: 99;
+	opacity: 1;
+}
+.sdot1 {
+	width: 280px;
+	position: absolute;
+	right: -40px;
+	top: 30px;
+	z-index: 99;
+	opacity: 1;
+}
+@media (max-width: 768px) {
+	.aboutdot {
+		width: 45px;
+		position: absolute;
+		right: 20px;
+		top: 30px;
+	}
+	.processdot1 {
+		display: none;
+	}
+	.processdot2 {
+		display: none;
+	}
+	.collabdot1 {
+		width: 51px;
+		position: absolute;
+		left: 4%;
+		bottom: 239px;
+		z-index: -99;
+		opacity: 0.4;
+	}
+	.collabdot2 {
+		width: 70px;
+		position: absolute;
+		right: -1%;
+		top: 121px;
+		z-index: -99;
+		opacity: 0.4;
+	}
+	.collabdot3 {
+		width: 56px;
+		position: absolute;
+		right: 6%;
+		bottom: -65px;
+		z-index: -99;
+		opacity: 0.4;
+	}
+	.sdot0 {
+		display: none;
+	}
+	.sdot1 {
+		display: none;
+	}
+}
+a {
+	text-decoration: none !important;
 }
