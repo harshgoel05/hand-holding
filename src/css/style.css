@@ -72,7 +72,6 @@ html {
 .hometext h1 {
 	font-family: Gilroy-ExtraBold;
 }
-
 .home-img {
 	width: 100%;
 	margin-top: 30%;
@@ -117,7 +116,7 @@ html {
 	width: 50%;
 }
 .hhs-card p {
-	margin-top: 30px;
+	margin-top: 15px;
 	color: #707070;
 	text-decoration: none !important;
 }
@@ -322,7 +321,6 @@ footer .col-md-4 {
 	}
 	.links-cont {
 		margin-top: 70px;
-		margin-left: 20px;
 	}
 	.links-cont a {
 		color: white !important;
@@ -342,7 +340,7 @@ footer .col-md-4 {
 
 /* our Services */
 #our-services .content-tag {
-	text-align: center;
+	text-align: justify;
 }
 #our-services h2 {
 	color: #3c90e6;
@@ -503,6 +501,9 @@ footer .col-md-4 {
 	}
 	.sdot1 {
 		display: none;
+	}
+	.hometext p {
+		text-align: right;
 	}
 }
 a {
