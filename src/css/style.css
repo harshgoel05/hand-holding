@@ -7,6 +7,9 @@
 	font-family: Gilroy-ExtraBold;
 	src: url('../fonts/Gilroy-ExtraBold.otf');
 }
+a {
+	text-decoration: none !important;
+}
 
 .navbar {
 	background-color: transparent !important;
@@ -138,11 +141,7 @@ html {
 .hhs-card-tag {
 	margin: 0px 260px;
 }
-@media (max-width: 1300px) {
-	.hhs-card-tag {
-		margin: 0px 30px;
-	}
-}
+
 /*Changing the color of collaboration heading to white*/
 .collab {
 	color: white;
@@ -156,7 +155,7 @@ html {
 	background-position: center center;
 	background-size: 100% 100%;
 	/* background-size: cover; */
-	padding: 150px 0px 40px 20px;
+	padding: 250px 0px 140px 20px;
 }
 .services-tag {
 	margin: 120px 250px;
@@ -289,54 +288,6 @@ footer .col-md-4 {
 	font-size: 20px;
 	text-align: center;
 }
-@media (max-width: 768px) {
-	.hometext {
-		margin: 140px 80px 0px 30px;
-		color: white;
-	}
-	.home-img {
-		margin-top: 0;
-	}
-	.hhs-card-tag {
-		margin: 0px auto;
-	}
-	.content-tag {
-		padding: 20px 16%;
-	}
-	.img-tag img {
-		width: 90%;
-	}
-	.services-tag {
-		margin: 0px auto;
-	}
-	.services-tag {
-		width: 200px;
-	}
-	#contact-us {
-		margin: 0px auto;
-	}
-	footer {
-		margin-top: 60px;
-		height: 600px;
-	}
-	.links-cont {
-		margin-top: 70px;
-	}
-	.links-cont a {
-		color: white !important;
-		margin: auto;
-		text-align: center;
-		font-size: 18px;
-		display: block;
-		margin-bottom: 10px;
-	}
-	.desktop-links {
-		display: none;
-	}
-	.phone-links {
-		display: block;
-	}
-}
 
 /* our Services */
 #our-services .content-tag {
@@ -377,23 +328,6 @@ footer .col-md-4 {
 	width: 100%;
 	text-align: center;
 	text-transform: capitalize;
-}
-
-@media (max-width: 768px) {
-	.single-service {
-		padding: 0;
-		height: 640px;
-	}
-	.single-service .col-md-4 {
-		margin: auto;
-		text-align: center;
-	}
-	.tech-stack {
-		display: none;
-	}
-	#services {
-		background: #22395b !important;
-	}
 }
 
 /* Dots */
@@ -459,7 +393,33 @@ footer .col-md-4 {
 	z-index: 99;
 	opacity: 1;
 }
+
+.web-1,
+.app-1,
+.gd-1,
+.ui-1 {
+	position: absolute;
+	width: 200px;
+	opacity: 0.03;
+	top: 10%;
+	right: -30px;
+}
+
 @media (max-width: 768px) {
+	.single-service {
+		padding: 0;
+		height: 640px;
+	}
+	.single-service .col-md-4 {
+		margin: auto;
+		text-align: center;
+	}
+	.tech-stack {
+		display: none;
+	}
+	#services {
+		background: #22395b !important;
+	}
 	.aboutdot {
 		width: 45px;
 		position: absolute;
@@ -505,21 +465,57 @@ footer .col-md-4 {
 	.hometext p {
 		text-align: right;
 	}
-}
-a {
-	text-decoration: none !important;
-}
+	.navbar .navbar-brand {
+		font-size: 18px;
+	}
+	.hhs-card-tag {
+		margin: 0px 30px;
+	}
 
-.web-1,
-.app-1,
-.gd-1,
-.ui-1 {
-	position: absolute;
-	width: 200px;
-	opacity: 0.03;
-	top: 10%;
-	right: -30px;
-}
-
-@media (max-width: 768px) {
+	.hometext {
+		margin: 140px 80px 0px 30px;
+		color: white;
+	}
+	.home-img {
+		margin-top: 0;
+	}
+	.hhs-card-tag {
+		margin: 0px auto;
+	}
+	.content-tag {
+		padding: 20px 16%;
+	}
+	.img-tag img {
+		width: 90%;
+	}
+	.services-tag {
+		margin: 0px auto;
+	}
+	.services-tag {
+		width: 200px;
+	}
+	#contact-us {
+		margin: 0px auto;
+	}
+	footer {
+		margin-top: 60px;
+		height: 600px;
+	}
+	.links-cont {
+		margin-top: 70px;
+	}
+	.links-cont a {
+		color: white !important;
+		margin: auto;
+		text-align: center;
+		font-size: 18px;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.desktop-links {
+		display: none;
+	}
+	.phone-links {
+		display: block;
+	}
 }
