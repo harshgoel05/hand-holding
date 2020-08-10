@@ -138,9 +138,6 @@ html {
 	text-align: center;
 	margin: 20px auto;
 }
-.hhs-card-tag {
-	margin: 0px 260px;
-}
 
 /*Changing the color of collaboration heading to white*/
 .collab {
@@ -472,19 +469,12 @@ footer .col-md-4 {
 	.navbar .navbar-brand {
 		font-size: 18px;
 	}
-	.hhs-card-tag {
-		margin: 0px 30px;
-	}
-
 	.hometext {
 		margin: 140px 80px 0px 30px;
 		color: white;
 	}
 	.home-img {
 		margin-top: 0;
-	}
-	.hhs-card-tag {
-		margin: 0px auto;
 	}
 	.content-tag {
 		padding: 20px 16%;
@@ -522,4 +512,7 @@ footer .col-md-4 {
 	.phone-links {
 		display: block;
 	}
+}
+.single-service .col-md-4 img {
+	width: 380px;
 }
