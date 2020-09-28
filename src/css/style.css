@@ -326,6 +326,7 @@ footer .col-md-4 {
 }
 .single-service .tech-stack {
   padding: 10px 70px;
+  margin-top: 20px;
 }
 .single-service .tech {
   padding: 6px 15px;
@@ -554,4 +555,22 @@ footer .col-md-4 {
 }
 #our-services-card {
   padding-top: 0px !important;
+}
+.single-service .col-md-4 img {
+  margin-top: 60px;
+}
+.single-service ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 768px) {
+  .single-service .col-md-4 img {
+    width: 70%;
+  }
+  .single-service .content-col h2 {
+    font-size: 25px;
+  }
+  .single-service .content-col p {
+    text-align: justify;
+  }
 }
