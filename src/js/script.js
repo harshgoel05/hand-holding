@@ -13,6 +13,9 @@ document.addEventListener("scroll", function () {
     }
   }
 });
+$(".navbar-nav .nav-link").on("click", function () {
+  $(".navbar-collapse").collapse("hide");
+});
 
 if (w < 800) {
   document.getElementById("hhs-nav").classList.add("hhs-active");
