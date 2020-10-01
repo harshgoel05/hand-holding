@@ -20,6 +20,32 @@
     <link rel="icon" href="./src/img/logo.png" sizes="16x16" />
     <title>HandHolding Solution || Home</title>
     <link rel="canonical" href="https://handholdingsolution.com/" />
+    <script>
+      function pageLoad() {
+        setInterval(() => {
+          fadeout();
+        }, 1000);
+      }
+
+      function fadeout() {
+        var opacity = 0;
+        var intervalID = 0;
+        setInterval(() => {
+          var loader = document.getElementById("loader");
+          opacity = Number(
+            window.getComputedStyle(loader).getPropertyValue("opacity")
+          );
+          if (opacity > 0) {
+            opacity = opacity - 0.1;
+            loader.style.opacity = opacity;
+          } else {
+            clearInterval(intervalID);
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+          }
+        }, 40);
+      }
+    </script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -39,8 +65,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
-  <body>
-    <!-- Navbar -->
+  <body onload="pageLoad()">
+    <!-- Loading Animation -->
+    <div id="loader">
+      <div class="loader-cube-grid">
+        <div class="loader-cube loader-cube1"></div>
+        <div class="loader-cube loader-cube2"></div>
+        <div class="loader-cube loader-cube3"></div>
+        <div class="loader-cube loader-cube4"></div>
+        <div class="loader-cube loader-cube5"></div>
+        <div class="loader-cube loader-cube6"></div>
+        <div class="loader-cube loader-cube7"></div>
+        <div class="loader-cube loader-cube8"></div>
+        <div class="loader-cube loader-cube9"></div>
+      </div>
+      <p class="loader-text">Getting Ready</p>
+    </div>
+
+    <div id="content">
+      <!-- Navbar -->
+
     <div id="floating-whatsapp">
       <a href="https://wa.me/+919079842671"
         ><img src="./src/img//whatsapp_logo.png" alt=""
@@ -489,6 +533,8 @@
         </div>
       </div>
     </footer>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
