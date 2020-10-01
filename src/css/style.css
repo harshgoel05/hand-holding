@@ -244,11 +244,9 @@ html {
 }
 
 #services {
-  background: url("../img/bg-1.png");
+  background-color: #22395b;    
   background-position: center center;
   background-size: 100% 100%;
-  /* background-size: cover; */
-  padding: 270px 0px 270px 20px;
 }
 .services-tag {
   margin: 120px 250px;
