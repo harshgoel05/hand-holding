@@ -20,32 +20,7 @@
     <link rel="icon" href="./src/img/logo.png" sizes="16x16" />
     <title>HandHolding Solution || Home</title>
     <link rel="canonical" href="https://handholdingsolution.com/" />
-    <script>
-      function pageLoad() {
-        setInterval(() => {
-          fadeout();
-        }, 1000);
-      }
-
-      function fadeout() {
-        var opacity = 0;
-        var intervalID = 0;
-        setInterval(() => {
-          var loader = document.getElementById("loader");
-          opacity = Number(
-            window.getComputedStyle(loader).getPropertyValue("opacity")
-          );
-          if (opacity > 0) {
-            opacity = opacity - 0.1;
-            loader.style.opacity = opacity;
-          } else {
-            clearInterval(intervalID);
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("content").style.display = "block";
-          }
-        }, 40);
-      }
-    </script>
+    <script src="./src/js/loader.js"></script>
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap CSS -->
