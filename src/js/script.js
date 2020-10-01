@@ -1,5 +1,10 @@
 var w = window.innerWidth;
-
+$(document).ready(function () {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+});
 document.addEventListener("scroll", function () {
   var loc = window.location.href;
   if (!loc.includes("services.html")) {
